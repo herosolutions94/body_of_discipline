@@ -12,49 +12,49 @@ export default function Footer() {
       {
         id: 2,
         text: "How it Works",
-        link: "/",
+        link: "/how-it-works",
       },
       {
         id: 3,
         text: "Our Story",
-        link: "/",
+        link: "/story",
       },
       {
         id: 4,
         text: "The Team",
-        link: "/",
+        link: "/team",
       },
       {
         id: 5,
         text: "Science",
-        link: "/",
+        link: "/science",
       },
       {
         id: 6,
         text: "Health Guide",
-        link: "/privacy-policy",
+        link: "/health-guide",
       },
     ],
     list_03: [
       {
         id: 1,
         text: "FAQ’s",
-        link: "/",
+        link: "/faq",
       },
       {
         id: 2,
         text: "Plans and Pricing",
-        link: "/",
+        link: "/plans-pricing",
       },
       {
         id: 3,
         text: "Contact",
-        link: "/",
+        link: "/contact",
       },
       {
         id: 4,
         text: "Privacy policies ",
-        link: "/",
+        link: "/privacy-policy",
       },
       {
         id: 5,

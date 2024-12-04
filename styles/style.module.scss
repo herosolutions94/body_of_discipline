@@ -1903,7 +1903,10 @@
       }
       .inner {
         color: $white !important;
-        display: block !important;
+        @include ipad_sm{
+          display: block !important;
+
+        }
         .image {
           height: auto;
           img {
@@ -2934,6 +2937,40 @@
     }
     .btn_blk {
       margin-top: 30px;
+    }
+  }
+}
+
+#review{
+  .coll{
+    width: calc(100%/2);
+    padding: 10px;
+    @include mobile_md{
+    width: calc(100%/1);
+
+    }
+    .inner{
+      background-color: #C1E1C1;
+      padding: 30px;
+      border-radius: 27px;
+      .icon{
+        width: 35px;
+        margin-bottom: 30px;
+      }
+      p{
+        font-family: 'Regular';
+        color: #090914;
+      }
+      .bottom{
+        margin-top: 30px;
+        h4{
+          font-family: 'Medium';
+          margin-bottom: 4px;
+        }
+        p{
+          color: #6D8B6D;
+        }
+      }
     }
   }
 }

@@ -26,6 +26,9 @@ export default function Header() {
     "/testimonials",
     "/testosetrone",
     "/weight-loss",
+    "/terms-condition",
+    "/reviews",
+
   ];
 
   const [toggle, setToggle] = useState(false);
@@ -46,9 +49,9 @@ export default function Header() {
               <a href="">(123) 456-7890 </a>
             </p>
             <div className="coll">
-              <Link href="/">Science</Link>
-              <Link href="/">Health Guide</Link>
-              <Link href="/">Contact us</Link>
+              <Link href="/science">Science</Link>
+              <Link href="/health-guide">Health Guide</Link>
+              <Link href="/contact">Contact us</Link>
             </div>
           </div>
         </div>
@@ -57,7 +60,13 @@ export default function Header() {
         <div className="contain">
           <div className="logo">
             <Link href="/">
+            {
+              pagesWithClass.includes(path) ?
+              <img src="/images/logo2.png" alt="" />
+              :
               <img src="/images/logo.png" alt="" />
+            }
+              
             </Link>
           </div>
           <div
@@ -69,27 +78,27 @@ export default function Header() {
           <nav id="nav" className={toggle ? "active" : ""}>
             <ul>
               <li>
-                <Link href="/" onClick={ToggleAction}>
+                <Link href="/testosterone-therapy" onClick={ToggleAction}>
                   Testosterone Therapy
                 </Link>
               </li>
               <li>
-                <Link href="/" onClick={ToggleAction}>
+                <Link href="/advanced-peptides" onClick={ToggleAction}>
                   Advanced Peptides
                 </Link>
               </li>
               <li>
-                <Link href="/" onClick={ToggleAction}>
+                <Link href="/weight-loss" onClick={ToggleAction}>
                   Weight Loss
                 </Link>
               </li>
               <li>
-                <Link href="/" onClick={ToggleAction}>
+                <Link href="/ed-medications" onClick={ToggleAction}>
                   ED Medications
                 </Link>
               </li>
               <li>
-                <Link href="/" onClick={ToggleAction}>
+                <Link href="/supplements" onClick={ToggleAction}>
                   Supplementsides
                 </Link>
               </li>
