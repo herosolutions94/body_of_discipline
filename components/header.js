@@ -28,6 +28,8 @@ export default function Header() {
     "/weight-loss",
     "/terms-condition",
     "/reviews",
+    "/oral-testosterone",
+
 
   ];
 
