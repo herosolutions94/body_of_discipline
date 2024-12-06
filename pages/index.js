@@ -39,6 +39,8 @@ export default function Home() {
         breakpoint: 991,
         settings: {
           slidesToShow: 2,
+          dots: true,
+          arrows: false ,
         },
       },
       {
@@ -47,6 +49,8 @@ export default function Home() {
           slidesToShow: 1,
           initialSlide: 1,
           autoplaySpeed: 2000,
+          dots: true,
+          arrows: false ,
         },
       },
     ],

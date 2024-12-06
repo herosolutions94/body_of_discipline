@@ -27,6 +27,8 @@ export default function Testimonials() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 1,
+          dots: true,
+          arrows: false ,
         },
       },
       {
@@ -35,6 +37,8 @@ export default function Testimonials() {
           slidesToShow: 1,
           initialSlide: 1,
           autoplaySpeed: 2000,
+          dots: true,
+          arrows: false ,
         },
       },
     ],

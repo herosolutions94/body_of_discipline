@@ -391,6 +391,14 @@
 #testi {
   background-color: $dark_gray;
   padding: 7rem 0;
+  .slick-dots{
+    bottom: -43px;
+  }
+  
+  .slick-dots li button:before{
+    // color: #fff !important;
+    opacity: 1 !important;
+  }
   @include mobile_md {
     .slick-prev,
     .slick-next {
@@ -2970,6 +2978,12 @@
     .coll {
       width: calc(100% / 4);
       padding: 10px;
+      @include ipad_sm{
+        width: calc(100% / 2);
+      }
+      @include ipad_sm{
+        width: calc(100% / 1);
+      }
       .iner {
         border-radius: 20px;
         padding: 20px;
@@ -2997,6 +3011,9 @@
   padding: 12rem 0;
   .text{
     width: 40%;
+    @include ipad_sm{
+      width: 100%;
+    }
     margin-left: auto;
     color: #fff;
     h2{
@@ -3012,6 +3029,8 @@
   .col2{
     padding-right: 40px;
     padding-left: 0 !important;
+    padding-top: 0;
+    padding-bottom: 30px !important
   }
   .col1{
     .image {
@@ -3046,9 +3065,17 @@
     .coll{
 width: calc(100%/3);
 padding: 20px;
+@include mobile_md{
+width: calc(100%/1);
+
+}
+
 .image{
   width: 370px;
   margin-bottom: 20px;
+  @include ipad{
+  width: auto;
+  }
 }
 h4{
   font-family: 'SemiBold';
@@ -3056,4 +3083,41 @@ h4{
 }
     }
   }
+}
+
+.oral_right{
+  .col2{
+    h2{
+      font-size: 50px !important;
+      @include mobile_md{
+        font-size: 35px !important;
+      }
+    }
+  }
+  .col1{
+    .image {
+   padding-bottom: 75% !important;
+      background-color: transparent;
+      box-shadow: none;
+      @include radius(0);
+      @include ipad_sm {
+        @include img(80%);
+        background-color: transparent;
+        box-shadow: none;
+        @include radius(0);
+      }
+      img {
+      object-fit: contain !important ;
+      }
+    }
+  }
+}
+
+.slick-dots li button:before {
+  font-size: 11px !important;
+}
+
+
+.slick-dots li.slick-active button:before{
+  color: #769876 !important;
 }

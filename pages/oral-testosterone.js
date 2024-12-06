@@ -27,7 +27,7 @@ export default function Oral_testosteron() {
           </div>
         </div>
       </section>
-      <section id="peptide" className="padding-minus">
+      <section id="peptide" className="padding-minus oral_right">
         <div className="contain">
           <div className="flex">
             <div className="col1">
@@ -155,7 +155,7 @@ export default function Oral_testosteron() {
                 </li>
               </ul>
               <div className="btn_blk">
-                <Link href="" className="site_btn blackgreen">
+                <Link href="" className="site_btn">
                   Start Your Journey Today
                 </Link>
               </div>
